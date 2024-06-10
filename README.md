@@ -1,2 +1,2 @@
-# projeto-automa-o-de-testes-api
+# projeto-automacao-de-testes-api
 Testes utilizanso JestJs para a API
