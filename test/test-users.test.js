@@ -6,7 +6,7 @@ describe('Suite de testes da api users..', ()=>{
 
     const cadastro_usuario_faker = {
         nome: fakerBr.name.firstName(),
-        telefone: fakerBr.phone.phoneNumber(),
+        telefone: fakerBr.phone.phoneNumber('+55 (##) ###-###'),
         email: fakerBr.internet.email(),
         senha: fakerBr.internet.password(8)
       }
