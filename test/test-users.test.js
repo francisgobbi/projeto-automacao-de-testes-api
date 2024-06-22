@@ -23,7 +23,7 @@ describe('Suite de testes da api users..', ()=>{
            console.log(response.body)
        
    });
-   it('Deve tentar cadastrar um novo usuario com valores inavalidos .. deve retornar status 422.', async()=> {
+   it('Deve tentar cadastrar um novo usuario com valores invalidos .. deve retornar status 422.', async()=> {
     const response = await request(rota)
       .post('/users')
       .send(cadastro_usuario_vazio);         
