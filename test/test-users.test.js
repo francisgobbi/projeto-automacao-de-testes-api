@@ -11,16 +11,14 @@ describe('Suite de testes da api users..', ()=>{
         senha: fakerBr.internet.password(8)
       }
    
-    const json_arquivo_cadastro_usuario_vazio = {
-       
+    const json_arquivo_cadastro_usuario_vazio = {       
     }
 
   
     it('Deve cadastrar um novo usuario .. deve retornar status 200.', async()=> {
         const response = await request(rota)
           .post('/users')
-          .send(cadastro_usuario_faker);
-          // precisamos construir os dados que serao enviado no body
+          .send(cadastro_usuario_faker);         
            expect(response.status).toBe(200)
            console.log(response.body)
        
@@ -47,12 +45,10 @@ describe('Suite de testes da api users..', ()=>{
 
     it('Envia os dados vazios e deve retornar um status 422', async () => {
         const response = await request(rota)
-            .post('/users')
-            //precisamos construir os dados que queremos enviar
+            .post('/users')            
             .send(cadastro_usuario_faker)
         expect(response.status).toBe(422);
         expect(JSON.stringify(response.body)).toBe
-        //expect(JSON.stringify(response.body)).toBe('{"error":"Os seguintes campos são obrigatórios: nome, telefone, email, senha"}');
         console.log(response.body);
         console.log(response.body)
     });
