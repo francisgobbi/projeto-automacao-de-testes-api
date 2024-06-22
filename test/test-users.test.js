@@ -12,10 +12,10 @@ describe('Suite de testes da api users..', ()=>{
       }
 
     const json_arquivo_cadastro_usuario = {
-        nome: "junior",
-        telefone: "(51)9987124",
-        email: "juniordasilvasoares@teste.com",  // chave unica
-        senha: "300"
+        nome: fakerBr.name.firstName(),
+        telefone: fakerBr.phone.phoneNumber(),
+        email: fakerBr.internet.email(),  // chave unica
+        senha: fakerBr.internet.password(8)
     }
     const json_arquivo_cadastro_usuario_vazio = {
        
