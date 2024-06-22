@@ -1,0 +1,213 @@
+{
+  "numFailedTestSuites": 1,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 8,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 1,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 2,
+  "numTotalTests": 8,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1719068678200,
+  "success": false,
+  "testResults": [
+    {
+      "failureMessage": "  \u001b[1m● \u001b[22mTest suite failed to run\n\n    Your test suite must contain at least one test.\n\n      \u001b[2mat onResult (\u001b[22mnode_modules/@jest/core/build/TestScheduler.js\u001b[2m:133:18)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules/@jest/core/build/TestScheduler.js\u001b[2m:254:19\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules/emittery/index.js\u001b[2m:363:13\u001b[22m\n          at Array.map (<anonymous>)\n      \u001b[2mat Emittery.emit (\u001b[22mnode_modules/emittery/index.js\u001b[2m:361:23)\u001b[22m\n",
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 0,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 0,
+        "runtime": 0,
+        "slow": false,
+        "start": 0
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testExecError": {
+        "message": "Your test suite must contain at least one test.",
+        "stack": "Error: Your test suite must contain at least one test.\n    at onResult (C:\\Projetos\\test-api\\node_modules\\@jest\\core\\build\\TestScheduler.js:133:18)\n    at C:\\Projetos\\test-api\\node_modules\\@jest\\core\\build\\TestScheduler.js:254:19\n    at C:\\Projetos\\test-api\\node_modules\\emittery\\index.js:363:13\n    at Array.map (<anonymous>)\n    at Emittery.emit (C:\\Projetos\\test-api\\node_modules\\emittery\\index.js:361:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+      },
+      "testFilePath": "C:\\Projetos\\test-api\\test\\tests-users.test.js",
+      "testResults": []
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 8,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1719068680566,
+        "runtime": 2047,
+        "slow": false,
+        "start": 1719068678519
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Projetos\\test-api\\test\\test-users.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users.."
+          ],
+          "duration": 55,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users.. Deve cadastrar um novo usuario .. deve retornar status 200.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deve cadastrar um novo usuario .. deve retornar status 200."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users.."
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users.. Deve tentar cadastrar um novo usuario com valores invalidos .. deve retornar status 422.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deve tentar cadastrar um novo usuario com valores invalidos .. deve retornar status 422."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users.."
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users.. Consulta todos usuarios.. deve retornar status 200.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Consulta todos usuarios.. deve retornar status 200."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users.."
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users.. Cadastro de um novo usuario com mesmo e-mail .. deve retornar status 422.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Cadastro de um novo usuario com mesmo e-mail .. deve retornar status 422."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users.."
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users.. Cadastro de um novo usuario existente .. deve retornar status 422.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Cadastro de um novo usuario existente .. deve retornar status 422."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users.."
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users.. Envia os dados vazios e deve retornar um status 422",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Envia os dados vazios e deve retornar um status 422"
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users.."
+          ],
+          "duration": 11,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users.. Altera o Cadastro de um usuario.. deve retornar status 200.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Altera o Cadastro de um usuario.. deve retornar status 200."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users.."
+          ],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users.. Deleta o cadastro de um usuario.. deve retornar status 204.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deleta o cadastro de um usuario.. deve retornar status 204."
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}
