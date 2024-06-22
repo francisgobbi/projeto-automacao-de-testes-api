@@ -4,19 +4,13 @@ const rota = "http://localhost:3000"
 
 describe('Suite de testes da api users..', ()=>{
 
-    const cadastro_usuario = {
+    const cadastro_usuario_faker = {
         nome: fakerBr.name.firstName(),
         telefone: fakerBr.phone.phoneNumber(),
         email: fakerBr.internet.email(),
         senha: fakerBr.internet.password(8)
       }
-
-    const json_arquivo_cadastro_usuario = {
-        nome: fakerBr.name.firstName(),
-        telefone: fakerBr.phone.phoneNumber(),
-        email: fakerBr.internet.email(),  // chave unica
-        senha: fakerBr.internet.password(8)
-    }
+   
     const json_arquivo_cadastro_usuario_vazio = {
        
     }
@@ -25,7 +19,7 @@ describe('Suite de testes da api users..', ()=>{
     it('Deve cadastrar um novo usuario .. deve retornar status 200.', async()=> {
         const response = await request(rota)
           .post('/users')
-          .send(json_arquivo_cadastro_usuario);
+          .send(cadastro_usuario_faker);
           // precisamos construir os dados que serao enviado no body
            expect(response.status).toBe(200)
            console.log(response.body)
@@ -46,7 +40,7 @@ describe('Suite de testes da api users..', ()=>{
     it('Cadastro de um novo usuario existente .. deve retornar status 422.', async()=> {
         const response = await request(rota)
          .post('/users')
-         .send(json_arquivo_cadastro_usuario);
+         .send(cadastro_usuario_faker);
         expect(response.status).toBe(422)       
        
     });
@@ -55,7 +49,7 @@ describe('Suite de testes da api users..', ()=>{
         const response = await request(rota)
             .post('/users')
             //precisamos construir os dados que queremos enviar
-            .send(json_arquivo_cadastro_usuario_vazio)
+            .send(cadastro_usuario_faker)
         expect(response.status).toBe(422);
         expect(JSON.stringify(response.body)).toBe
         expect(JSON.stringify(response.body)).toBe('{"error":"Os seguintes campos são obrigatórios: nome, telefone, email, senha"}');
@@ -66,7 +60,7 @@ describe('Suite de testes da api users..', ()=>{
    it('Altera o Cadastro de um usuario.. deve retornar status 200.', async()=> {
             const response = await request(rota)
             .put('/users/13')
-            .send(json_arquivo_cadastro_usuario);
+            .send(cadastro_usuario_faker);
             expect(response.status).toBe(200)           
      });
     
