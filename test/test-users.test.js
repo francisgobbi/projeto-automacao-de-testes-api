@@ -1,12 +1,20 @@
 const request = require ('supertest');
+const fakerBr = require('faker-br');
 const rota = "http://localhost:3000"
 
 describe('Suite de testes da api users..', ()=>{
 
+    const cadastro_usuario = {
+        nome: fakerBr.name.firstName(),
+        telefone: fakerBr.phone.phoneNumber(),
+        email: fakerBr.internet.email(),
+        senha: fakerBr.internet.password(8)
+      }
+
     const json_arquivo_cadastro_usuario = {
         nome: "junior",
         telefone: "(51)9987124",
-        email: "juniordasilva@teste.com",  // chave unica
+        email: "juniordasilvasoares@teste.com",  // chave unica
         senha: "300"
     }
     const json_arquivo_cadastro_usuario_vazio = {
