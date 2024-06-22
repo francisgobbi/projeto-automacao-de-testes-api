@@ -11,18 +11,26 @@ describe('Suite de testes da api users..', ()=>{
         senha: fakerBr.internet.password(8)
       }
    
-    const json_arquivo_cadastro_usuario_vazio = {       
+    const cadastro_usuario_vazio = {       
     }
 
   
-    it('Deve cadastrar um novo usuario .. deve retornar status 200.', async()=> {
+   it('Deve cadastrar um novo usuario .. deve retornar status 200.', async()=> {
         const response = await request(rota)
           .post('/users')
           .send(cadastro_usuario_faker);         
            expect(response.status).toBe(200)
            console.log(response.body)
        
-         });
+   });
+   it('Deve tentyar cadastrar um novo usuario com valores inavalidos .. deve retornar status 422.', async()=> {
+    const response = await request(rota)
+      .post('/users')
+      .send(cadastro_usuario_vazio);         
+       expect(response.status).toBe(422)
+       console.log(response.body)
+   
+     });
 
 
    it('Consulta todos usuarios.. deve retornar status 200.', async()=> {
