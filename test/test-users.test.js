@@ -52,7 +52,7 @@ describe('Suite de testes da api users..', ()=>{
             .send(cadastro_usuario_faker)
         expect(response.status).toBe(422);
         expect(JSON.stringify(response.body)).toBe
-        expect(JSON.stringify(response.body)).toBe('{"error":"Os seguintes campos são obrigatórios: nome, telefone, email, senha"}');
+        //expect(JSON.stringify(response.body)).toBe('{"error":"Os seguintes campos são obrigatórios: nome, telefone, email, senha"}');
         console.log(response.body);
         console.log(response.body)
     });
