@@ -1,11 +1,10 @@
 const request = require ('supertest');
-const fakerBr = require('faker-br');
 const rota = "http://localhost:3000"
 
 
 describe('Suite de testes da api conteudos..', ()=>{
 
-  const cadastro_conteudo_faker = {    
+  const cadastro_conteudo = {    
     titulo: "O Fim do Mundo",
     descricao: "A hsitória do fim do mundo",
     tipoConteudo: "Ficção",
@@ -17,7 +16,7 @@ describe('Suite de testes da api conteudos..', ()=>{
 it('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201.', async()=> {
   const response = await request(rota)
     .post('/conteudos')
-    .send(cadastro_conteudo_faker);         
+    .send(cadastro_conteudo);         
      expect(response.status).toBe(201)
      console.log(response.body)   
 });
@@ -25,8 +24,8 @@ it('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente re
 
 it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os dados esperados e o statusCode 200.', async()=> {
   const response = await request(rota)
-    .get('/conteudos/10')  
-    .send(cadastro_conteudo_faker);            
+    .get('/conteudos/6')  
+    .send(cadastro_conteudo);            
      expect(response.status).toBe(200)
      console.log(response.body)
  
@@ -35,14 +34,14 @@ it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os d
 it('Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.', async()=> {
   const response = await request(rota)
     .post('/conteudos')
-    .send(cadastro_conteudo_faker);         
+    .send(cadastro_conteudo);         
      expect(response.status).toBe(201)
      console.log(response.body)   
 });
 
 it('Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.', async()=> {
   const response = await request(rota)
-    .get('/conteudos/10')             
+    .get('/conteudos/6')             
      expect(response.status).toBe(200)
      console.log(response.body)
  
