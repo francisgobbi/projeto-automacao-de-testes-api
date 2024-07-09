@@ -81,9 +81,9 @@ describe('Suite de testes da api users..', ()=>{
 describe('Suite de testes da api conteudos..', ()=>{
 
   const cadastro_conteudo_faker = {
-    id: fakerBr.id,
-    titulo: fakers.titulo,
-    descricao: fakerBr.descricao,
+    id: fakerBr.id.id(),
+    titulo: fakers.titulo.titulo(),
+    descricao: fakerBr.descricao.descricao(),
     tipoConteudo: fakerBr.internet.tipoConteudo(),
     conteudo: fakerBr.internet.conteudo(),
     dataCadastro: fakerBr.internet.dataCadastro()
