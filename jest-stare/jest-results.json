@@ -1,14 +1,14 @@
 {
-  "numFailedTestSuites": 1,
+  "numFailedTestSuites": 0,
   "numFailedTests": 0,
-  "numPassedTestSuites": 0,
-  "numPassedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 1,
   "numPendingTestSuites": 0,
   "numPendingTests": 0,
-  "numRuntimeErrorTestSuites": 1,
+  "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
   "numTotalTestSuites": 1,
-  "numTotalTests": 0,
+  "numTotalTests": 1,
   "openHandles": [],
   "snapshot": {
     "added": 0,
@@ -26,22 +26,21 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1720553866865,
+  "startTime": 1720557242002,
   "success": false,
   "testResults": [
     {
-      "failureMessage": "  \u001b[1m● \u001b[22mTest suite failed to run\n\n    ReferenceError: fakers is not defined\n\n    \u001b[0m \u001b[90m 83 |\u001b[39m   \u001b[36mconst\u001b[39m cadastro_conteudo_faker \u001b[33m=\u001b[39m {\n     \u001b[90m 84 |\u001b[39m     id\u001b[33m:\u001b[39m fakerBr\u001b[33m.\u001b[39mid\u001b[33m,\u001b[39m\n    \u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 85 |\u001b[39m     titulo\u001b[33m:\u001b[39m fakers\u001b[33m.\u001b[39mtitulo\u001b[33m,\u001b[39m\n     \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 86 |\u001b[39m     descricao\u001b[33m:\u001b[39m fakerBr\u001b[33m.\u001b[39mdescricao\u001b[33m,\u001b[39m\n     \u001b[90m 87 |\u001b[39m     tipoConteudo\u001b[33m:\u001b[39m fakerBr\u001b[33m.\u001b[39minternet\u001b[33m.\u001b[39mtipoConteudo()\u001b[33m,\u001b[39m\n     \u001b[90m 88 |\u001b[39m     conteudo\u001b[33m:\u001b[39m fakerBr\u001b[33m.\u001b[39minternet\u001b[33m.\u001b[39mconteudo()\u001b[33m,\u001b[39m\u001b[0m\n\n      \u001b[2mat fakers (\u001b[22m\u001b[0m\u001b[36mtest/test-users.test.js\u001b[39m\u001b[0m\u001b[2m:85:13)\u001b[22m\n      \u001b[2mat Object.describe (\u001b[22m\u001b[0m\u001b[36mtest/test-users.test.js\u001b[39m\u001b[0m\u001b[2m:81:1)\u001b[22m\n",
       "leaks": false,
       "numFailingTests": 0,
-      "numPassingTests": 0,
+      "numPassingTests": 1,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 0,
-        "runtime": 0,
+        "end": 1720557243575,
+        "runtime": 1489,
         "slow": false,
-        "start": 0
+        "start": 1720557242086
       },
       "skipped": false,
       "snapshot": {
@@ -53,9 +52,25 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testExecError": {},
       "testFilePath": "C:\\Projetos\\test-api\\test\\test-users.test.js",
-      "testResults": []
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Suite de testes da api conteudos.."
+          ],
+          "duration": 64,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api conteudos.. Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201."
+        }
+      ],
+      "failureMessage": null
     }
   ],
   "wasInterrupted": false
