@@ -89,7 +89,7 @@
                 <canvas id="test-suites-canvas" width="100" height="100"></canvas>
                 <h2>Test Suites</h2>
                 <div class="list-group">
-                    <p id="test-suites-results" class="list-group-item list-group-item-action">1 passed, 2 total</p>
+                    <p id="test-suites-results" class="list-group-item list-group-item-action">1 passed, 1 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -126,15 +126,15 @@
 }</div>
         <div id="accordion">
             <div class="d-none" id="test-results">{
-  &quot;numFailedTestSuites&quot;: 1,
+  &quot;numFailedTestSuites&quot;: 0,
   &quot;numFailedTests&quot;: 0,
   &quot;numPassedTestSuites&quot;: 1,
   &quot;numPassedTests&quot;: 8,
   &quot;numPendingTestSuites&quot;: 0,
   &quot;numPendingTests&quot;: 0,
-  &quot;numRuntimeErrorTestSuites&quot;: 1,
+  &quot;numRuntimeErrorTestSuites&quot;: 0,
   &quot;numTodoTests&quot;: 0,
-  &quot;numTotalTestSuites&quot;: 2,
+  &quot;numTotalTestSuites&quot;: 1,
   &quot;numTotalTests&quot;: 8,
   &quot;openHandles&quot;: [],
   &quot;snapshot&quot;: {
@@ -153,40 +153,9 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1719068678200,
+  &quot;startTime&quot;: 1720544908059,
   &quot;success&quot;: false,
   &quot;testResults&quot;: [
-    {
-      &quot;failureMessage&quot;: &quot;  \u001b[1m● \u001b[22mTest suite failed to run\n\n    Your test suite must contain at least one test.\n\n      \u001b[2mat onResult (\u001b[22mnode_modules&#x2F;@jest&#x2F;core&#x2F;build&#x2F;TestScheduler.js\u001b[2m:133:18)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;@jest&#x2F;core&#x2F;build&#x2F;TestScheduler.js\u001b[2m:254:19\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;emittery&#x2F;index.js\u001b[2m:363:13\u001b[22m\n          at Array.map (&lt;anonymous&gt;)\n      \u001b[2mat Emittery.emit (\u001b[22mnode_modules&#x2F;emittery&#x2F;index.js\u001b[2m:361:23)\u001b[22m\n&quot;,
-      &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 0,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;openHandles&quot;: [],
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 0,
-        &quot;runtime&quot;: 0,
-        &quot;slow&quot;: false,
-        &quot;start&quot;: 0
-      },
-      &quot;skipped&quot;: false,
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;uncheckedKeys&quot;: [],
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0
-      },
-      &quot;testExecError&quot;: {
-        &quot;message&quot;: &quot;Your test suite must contain at least one test.&quot;,
-        &quot;stack&quot;: &quot;Error: Your test suite must contain at least one test.\n    at onResult (C:\\Projetos\\test-api\\node_modules\\@jest\\core\\build\\TestScheduler.js:133:18)\n    at C:\\Projetos\\test-api\\node_modules\\@jest\\core\\build\\TestScheduler.js:254:19\n    at C:\\Projetos\\test-api\\node_modules\\emittery\\index.js:363:13\n    at Array.map (&lt;anonymous&gt;)\n    at Emittery.emit (C:\\Projetos\\test-api\\node_modules\\emittery\\index.js:361:23)\n    at process.processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:95:5)&quot;
-      },
-      &quot;testFilePath&quot;: &quot;C:\\Projetos\\test-api\\test\\tests-users.test.js&quot;,
-      &quot;testResults&quot;: []
-    },
     {
       &quot;leaks&quot;: false,
       &quot;numFailingTests&quot;: 0,
@@ -195,10 +164,10 @@
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1719068680566,
-        &quot;runtime&quot;: 2047,
+        &quot;end&quot;: 1720544909556,
+        &quot;runtime&quot;: 1411,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 1719068678519
+        &quot;start&quot;: 1720544908145
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -216,7 +185,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Suite de testes da api users..&quot;
           ],
-          &quot;duration&quot;: 55,
+          &quot;duration&quot;: 110,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Suite de testes da api users.. Deve cadastrar um novo usuario .. deve retornar status 200.&quot;,
@@ -231,7 +200,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Suite de testes da api users..&quot;
           ],
-          &quot;duration&quot;: 4,
+          &quot;duration&quot;: 8,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Suite de testes da api users.. Deve tentar cadastrar um novo usuario com valores invalidos .. deve retornar status 422.&quot;,
@@ -246,7 +215,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Suite de testes da api users..&quot;
           ],
-          &quot;duration&quot;: 4,
+          &quot;duration&quot;: 3,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Suite de testes da api users.. Consulta todos usuarios.. deve retornar status 200.&quot;,
@@ -276,7 +245,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Suite de testes da api users..&quot;
           ],
-          &quot;duration&quot;: 3,
+          &quot;duration&quot;: 5,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Suite de testes da api users.. Cadastro de um novo usuario existente .. deve retornar status 422.&quot;,
@@ -291,7 +260,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Suite de testes da api users..&quot;
           ],
-          &quot;duration&quot;: 4,
+          &quot;duration&quot;: 10,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Suite de testes da api users.. Envia os dados vazios e deve retornar um status 422&quot;,
@@ -306,7 +275,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Suite de testes da api users..&quot;
           ],
-          &quot;duration&quot;: 11,
+          &quot;duration&quot;: 42,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Suite de testes da api users.. Altera o Cadastro de um usuario.. deve retornar status 200.&quot;,
@@ -321,7 +290,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Suite de testes da api users..&quot;
           ],
-          &quot;duration&quot;: 7,
+          &quot;duration&quot;: 2,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Suite de testes da api users.. Deleta o cadastro de um usuario.. deve retornar status 204.&quot;,
@@ -392,7 +361,7 @@
   ],
   &quot;rootDir&quot;: &quot;C:\\Projetos\\test-api&quot;,
   &quot;runTestsByPath&quot;: false,
-  &quot;seed&quot;: -2131375769,
+  &quot;seed&quot;: 2028499089,
   &quot;skipFilter&quot;: false,
   &quot;snapshotFormat&quot;: {
     &quot;escapeString&quot;: false,
@@ -403,6 +372,7 @@
   &quot;testSequencer&quot;: &quot;C:\\Projetos\\test-api\\node_modules\\@jest\\test-sequencer\\build\\index.js&quot;,
   &quot;updateSnapshot&quot;: &quot;new&quot;,
   &quot;useStderr&quot;: false,
+  &quot;verbose&quot;: true,
   &quot;watch&quot;: false,
   &quot;watchAll&quot;: false,
   &quot;watchman&quot;: true,
