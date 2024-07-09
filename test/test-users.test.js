@@ -6,10 +6,10 @@ const rota = "http://localhost:3000"
 describe('Suite de testes da api conteudos..', ()=>{
 
   const cadastro_conteudo_faker = {    
-    titulo: "fakers.internet.titulo()",
-    descricao: "fakerBr.internet.descricao()",
-    tipoConteudo: "fakerBr.internet.tipoConteudo()",
-    conteudo: "fakerBr.internet.conteudo()"
+    titulo: "O Fim do Mundo",
+    descricao: "A hsitória do fim do mundo",
+    tipoConteudo: "Ficção",
+    conteudo: "Fim do mundo é um evento futuro hipotético que tem o potencial para prejudicar ou extinguir a humanidade e/ou qualquer outra forma de vida no planeta Terra."
     
   }
 
@@ -22,10 +22,10 @@ it('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente re
      console.log(response.body)   
 });
 
-/*
+
 it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os dados esperados e o statusCode 200.', async()=> {
   const response = await request(rota)
-    .get('/conteudos/id')  
+    .get('/conteudos/10')  
     .send(cadastro_conteudo_faker);            
      expect(response.status).toBe(200)
      console.log(response.body)
@@ -42,11 +42,10 @@ it('Você deverá alterar o conteúdo consultado anteriormente, e em seguida val
 
 it('Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.', async()=> {
   const response = await request(rota)
-    .get('/conteudos/id')             
+    .get('/conteudos/10')             
      expect(response.status).toBe(200)
      console.log(response.body)
  
 });
 
-*/
 });
