@@ -1,14 +1,14 @@
 {
-  "numFailedTestSuites": 0,
+  "numFailedTestSuites": 1,
   "numFailedTests": 0,
-  "numPassedTestSuites": 1,
-  "numPassedTests": 8,
+  "numPassedTestSuites": 0,
+  "numPassedTests": 0,
   "numPendingTestSuites": 0,
   "numPendingTests": 0,
-  "numRuntimeErrorTestSuites": 0,
+  "numRuntimeErrorTestSuites": 1,
   "numTodoTests": 0,
   "numTotalTestSuites": 1,
-  "numTotalTests": 8,
+  "numTotalTests": 0,
   "openHandles": [],
   "snapshot": {
     "added": 0,
@@ -26,21 +26,22 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1720544908059,
+  "startTime": 1720553810540,
   "success": false,
   "testResults": [
     {
+      "failureMessage": "  \u001b[1m● \u001b[22mTest suite failed to run\n\n    ReferenceError: fakers is not defined\n\n    \u001b[0m \u001b[90m 83 |\u001b[39m   \u001b[36mconst\u001b[39m cadastro_conteudo_faker \u001b[33m=\u001b[39m {\n     \u001b[90m 84 |\u001b[39m     id\u001b[33m:\u001b[39m fakerBr\u001b[33m.\u001b[39mid\u001b[33m,\u001b[39m\n    \u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 85 |\u001b[39m     titulo\u001b[33m:\u001b[39m fakers\u001b[33m.\u001b[39mtitulo\u001b[33m,\u001b[39m\n     \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 86 |\u001b[39m     descricao\u001b[33m:\u001b[39m fakerBr\u001b[33m.\u001b[39mdescricao\u001b[33m,\u001b[39m\n     \u001b[90m 87 |\u001b[39m     tipoConteudo\u001b[33m:\u001b[39m fakerBr\u001b[33m.\u001b[39minternet\u001b[33m.\u001b[39mtipoConteudo()\u001b[33m,\u001b[39m\n     \u001b[90m 88 |\u001b[39m     conteudo\u001b[33m:\u001b[39m fakerBr\u001b[33m.\u001b[39minternet\u001b[33m.\u001b[39mconteudo()\u001b[33m,\u001b[39m\u001b[0m\n\n      \u001b[2mat fakers (\u001b[22m\u001b[0m\u001b[36mtest/test-users.test.js\u001b[39m\u001b[0m\u001b[2m:85:13)\u001b[22m\n      \u001b[2mat Object.describe (\u001b[22m\u001b[0m\u001b[36mtest/test-users.test.js\u001b[39m\u001b[0m\u001b[2m:81:1)\u001b[22m\n",
       "leaks": false,
       "numFailingTests": 0,
-      "numPassingTests": 8,
+      "numPassingTests": 0,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1720544909556,
-        "runtime": 1411,
+        "end": 0,
+        "runtime": 0,
         "slow": false,
-        "start": 1720544908145
+        "start": 0
       },
       "skipped": false,
       "snapshot": {
@@ -52,130 +53,9 @@
         "unmatched": 0,
         "updated": 0
       },
+      "testExecError": {},
       "testFilePath": "C:\\Projetos\\test-api\\test\\test-users.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "Suite de testes da api users.."
-          ],
-          "duration": 110,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes da api users.. Deve cadastrar um novo usuario .. deve retornar status 200.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Deve cadastrar um novo usuario .. deve retornar status 200."
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes da api users.."
-          ],
-          "duration": 8,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes da api users.. Deve tentar cadastrar um novo usuario com valores invalidos .. deve retornar status 422.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Deve tentar cadastrar um novo usuario com valores invalidos .. deve retornar status 422."
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes da api users.."
-          ],
-          "duration": 3,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes da api users.. Consulta todos usuarios.. deve retornar status 200.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Consulta todos usuarios.. deve retornar status 200."
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes da api users.."
-          ],
-          "duration": 2,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes da api users.. Cadastro de um novo usuario com mesmo e-mail .. deve retornar status 422.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Cadastro de um novo usuario com mesmo e-mail .. deve retornar status 422."
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes da api users.."
-          ],
-          "duration": 5,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes da api users.. Cadastro de um novo usuario existente .. deve retornar status 422.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Cadastro de um novo usuario existente .. deve retornar status 422."
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes da api users.."
-          ],
-          "duration": 10,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes da api users.. Envia os dados vazios e deve retornar um status 422",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Envia os dados vazios e deve retornar um status 422"
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes da api users.."
-          ],
-          "duration": 42,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes da api users.. Altera o Cadastro de um usuario.. deve retornar status 200.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Altera o Cadastro de um usuario.. deve retornar status 200."
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes da api users.."
-          ],
-          "duration": 2,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes da api users.. Deleta o cadastro de um usuario.. deve retornar status 204.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Deleta o cadastro de um usuario.. deve retornar status 204."
-        }
-      ],
-      "failureMessage": null
+      "testResults": []
     }
   ],
   "wasInterrupted": false
