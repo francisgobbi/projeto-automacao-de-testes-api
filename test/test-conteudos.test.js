@@ -47,7 +47,7 @@ it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os d
 
 it('Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.', async()=> {
   const response = await request(rota)
-    .post('/conteudos')
+    .put('/conteudos')
     .send(alterarCadastroConteudo);  
     expect(response.body).toBeDefined();           
     expect(response.status).toBe(201)
