@@ -1,8 +1,8 @@
 {
-  "numFailedTestSuites": 0,
-  "numFailedTests": 0,
-  "numPassedTestSuites": 1,
-  "numPassedTests": 4,
+  "numFailedTestSuites": 1,
+  "numFailedTests": 1,
+  "numPassedTestSuites": 0,
+  "numPassedTests": 3,
   "numPendingTestSuites": 0,
   "numPendingTests": 0,
   "numRuntimeErrorTestSuites": 0,
@@ -26,21 +26,21 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1720789866930,
+  "startTime": 1720792981233,
   "success": false,
   "testResults": [
     {
       "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 4,
+      "numFailingTests": 1,
+      "numPassingTests": 3,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1720789867676,
-        "runtime": 655,
+        "end": 1720792982078,
+        "runtime": 707,
         "slow": false,
-        "start": 1720789867021
+        "start": 1720792981371
       },
       "skipped": false,
       "snapshot": {
@@ -58,7 +58,7 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 72,
+          "duration": 90,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201.",
@@ -73,7 +73,7 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 7,
+          "duration": 11,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os dados esperados e o statusCode 200.",
@@ -88,34 +88,43 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 12,
-          "failureDetails": [],
-          "failureMessages": [],
+          "duration": 11,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"id\"\u001b[39m\n\nExpected value: \u001b[32m42\u001b[39m\nReceived value: \u001b[31m43\u001b[39m",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"id\"\u001b[39m\n\nExpected value: \u001b[32m42\u001b[39m\nReceived value: \u001b[31m43\u001b[39m\n    at Object.toHaveProperty (C:\\Projetos\\test-api\\test\\test-conteudos.test.js:45:27)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+          ],
           "fullName": "Suite de testes da api conteudos.. Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 2,
+          "numPassingAsserts": 1,
           "retryReasons": [],
-          "status": "passed",
+          "status": "failed",
           "title": "Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201."
         },
         {
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 8,
+          "duration": 7,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
+          "numPassingAsserts": 2,
           "retryReasons": [],
           "status": "passed",
           "title": "Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200."
         }
       ],
-      "failureMessage": null
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes da api conteudos.. › Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected path: \u001b[32m\"id\"\u001b[39m\n\n    Expected value: \u001b[32m42\u001b[39m\n    Received value: \u001b[31m43\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 43 |\u001b[39m     \u001b[33m.\u001b[39msend(cadastro_conteudo)\u001b[33m;\u001b[39m  \u001b[22m\n\u001b[2m     \u001b[90m 44 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody)\u001b[33m.\u001b[39mtoBeDefined()\u001b[33m;\u001b[39m \u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 45 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'id'\u001b[39m\u001b[33m,\u001b[39midConteudo)\u001b[33m;\u001b[39m        \u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 46 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[22m\n\u001b[2m     \u001b[90m 47 |\u001b[39m     console\u001b[33m.\u001b[39mlog(response\u001b[33m.\u001b[39mbody)   \u001b[22m\n\u001b[2m     \u001b[90m 48 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toHaveProperty (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest/test-conteudos.test.js\u001b[39m\u001b[0m\u001b[2m:45:27)\u001b[22m\u001b[2m\u001b[22m\n"
     }
   ],
   "wasInterrupted": false
