@@ -41,14 +41,16 @@ it('Você deverá alterar o conteúdo consultado anteriormente, e em seguida val
   const response = await request(rota)
     .post('/conteudos')
     .send(cadastro_conteudo);  
-    expect(response.body).toBeDefined();         
+    expect(response.body).toBeDefined(); 
+    expect(response.body).toHaveProperty('id',idConteudo);        
     expect(response.status).toBe(201)
     console.log(response.body)   
 });
 
 it('Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.', async()=> {
   const response = await request(rota)
-    .get(`/conteudos/${idConteudo}`)             
+    .get(`/conteudos/${idConteudo}`)
+    expect(response.body).toHaveProperty('id',idConteudo);             
     expect(response.status).toBe(200)
     console.log(response.body)
  

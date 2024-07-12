@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1720787156474,
+  "startTime": 1720789866930,
   "success": false,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1720787157107,
-        "runtime": 549,
+        "end": 1720789867676,
+        "runtime": 655,
         "slow": false,
-        "start": 1720787156558
+        "start": 1720789867021
       },
       "skipped": false,
       "snapshot": {
@@ -58,7 +58,7 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 107,
+          "duration": 72,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201.",
@@ -73,13 +73,13 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 9,
+          "duration": 7,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os dados esperados e o statusCode 200.",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 2,
+          "numPassingAsserts": 3,
           "retryReasons": [],
           "status": "passed",
           "title": "Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os dados esperados e o statusCode 200."
@@ -88,7 +88,7 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 46,
+          "duration": 12,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.",
@@ -103,7 +103,7 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 6,
+          "duration": 8,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.",
