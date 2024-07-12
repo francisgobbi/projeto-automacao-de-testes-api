@@ -13,10 +13,10 @@ describe('Suite de testes da api conteudos..', ()=>{
   }
 
   const alterarCadastroConteudo = {    
-    titulo: "O Fim do Mundo",
-    descricao: "A hsitória do fim do mundo",
-    tipoConteudo: "Ficção",
-    conteudo: "Fim do mundo é um evento futuro hipotético que tem o potencial para prejudicar ou extinguir a humanidade e/ou qualquer outra forma de vida no planeta Terra."
+    titulo: "O Fim do PLaneta",
+    descricao: "A história do fim do planeta terra",
+    tipoConteudo: "Ficção !!!",
+    conteudo: "Aterado o conteudo do fim do mundo é um evento futuro hipotético que tem o potencial para prejudicar ou extinguir a humanidade e/ou qualquer outra forma de vida no planeta Terra."
     
   }
 
@@ -47,7 +47,7 @@ it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os d
 
 it('Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.', async()=> {
   const response = await request(rota)
-    .post('/conteudos')
+    .put('/conteudos')
     .send(alterarCadastroConteudo);  
     expect(response.body).toBeDefined(); 
     expect(response.body).toHaveProperty('id',idConteudo);        
@@ -57,7 +57,8 @@ it('Você deverá alterar o conteúdo consultado anteriormente, e em seguida val
 
 it('Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.', async()=> {
   const response = await request(rota)
-    .get(`/conteudos/${idConteudo}`)            
+    .delete(`/conteudos/${idConteudo}`)    
+    expect(response.body).toHaveProperty('id',idConteudo);           
     expect(response.status).toBe(200)
     console.log(response.body)
  
