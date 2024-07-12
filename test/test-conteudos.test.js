@@ -11,7 +11,14 @@ describe('Suite de testes da api conteudos..', ()=>{
     conteudo: "Fim do mundo é um evento futuro hipotético que tem o potencial para prejudicar ou extinguir a humanidade e/ou qualquer outra forma de vida no planeta Terra."
     
   }  
-
+  
+  const alterarCadastroConteudo = {      
+    titulo: "O Fim do PLaneta",
+    descricao: "A história do fim do planeta terra",
+    tipoConteudo: "Ficção !!!",
+    conteudo: "Aterado o conteudo do fim do mundo é um evento futuro hipotético que tem o potencial para prejudicar ou extinguir a humanidade e/ou qualquer outra forma de vida no planeta Terra."
+    
+  }
 
 it('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201.', async()=> {
   const response = await request(rota)
@@ -26,14 +33,7 @@ it('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente re
     console.log(response.body)   
 });
 
-const alterarCadastroConteudo = {  
-  id: `${idConteudo}`,  
-  titulo: "O Fim do PLaneta",
-  descricao: "A história do fim do planeta terra",
-  tipoConteudo: "Ficção !!!",
-  conteudo: "Aterado o conteudo do fim do mundo é um evento futuro hipotético que tem o potencial para prejudicar ou extinguir a humanidade e/ou qualquer outra forma de vida no planeta Terra.",
-  //dataCadastro: `${dataConteudo}`
-}
+
 
 it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os dados esperados e o statusCode 200.', async()=> {
   const response = await request(rota)
@@ -47,7 +47,7 @@ it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os d
 
 it('Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.', async()=> {
   const response = await request(rota)
-    .put('/conteudos')
+    .post('/conteudos')
     .send(alterarCadastroConteudo);  
     expect(response.body).toBeDefined();           
     expect(response.status).toBe(201)
@@ -61,5 +61,6 @@ it('Remover o conteúdo e garantir que o mesmo foi removido, não existe mais pa
     console.log(response.body)
  
 });
+
 
 });
