@@ -27,12 +27,12 @@ it('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente re
 });
 
 const alterarCadastroConteudo = {  
-  id: idConteudo,  
+  id: `${idConteudo}`,  
   titulo: "O Fim do PLaneta",
   descricao: "A história do fim do planeta terra",
   tipoConteudo: "Ficção !!!",
   conteudo: "Aterado o conteudo do fim do mundo é um evento futuro hipotético que tem o potencial para prejudicar ou extinguir a humanidade e/ou qualquer outra forma de vida no planeta Terra.",
-  dataCadastro: dataConteudo
+  //dataCadastro: `${dataConteudo}`
 }
 
 it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os dados esperados e o statusCode 200.', async()=> {
