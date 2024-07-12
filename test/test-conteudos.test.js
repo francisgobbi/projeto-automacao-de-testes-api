@@ -13,37 +13,44 @@ describe('Suite de testes da api conteudos..', ()=>{
   }
 
 
-it('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201.', async()=> {
+it.only('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201.', async()=> {
   const response = await request(rota)
     .post('/conteudos')
-    .send(cadastro_conteudo);         
-     expect(response.status).toBe(201)
-     console.log(response.body)   
+    .send(cadastro_conteudo); 
+    expect(response.body)           
+    expect(response.status).toBe(201)
+    expect (response.body).toBeDefined();
+    expect (response.body).toHaveProperty('id');
+    idConteudo = response.body.id
+    Console.log('Id do conetuedo cadastrador é : ', idConteudo)
+    console.log(response.body)   
 });
 
 
 it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os dados esperados e o statusCode 200.', async()=> {
   const response = await request(rota)
-    .get('/conteudos/6')  
-    .send(cadastro_conteudo);            
-     expect(response.status).toBe(200)
-     console.log(response.body)
+    .get('/conteudos/idConteudo')  
+    .send(cadastro_conteudo); 
+    expect(response.body)           
+    expect(response.status).toBe(200)
+    console.log(response.body)
  
 });
 
 it('Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.', async()=> {
   const response = await request(rota)
     .post('/conteudos')
-    .send(cadastro_conteudo);         
-     expect(response.status).toBe(201)
-     console.log(response.body)   
+    .send(cadastro_conteudo);  
+    expect(response.body)          
+    expect(response.status).toBe(201)
+    console.log(response.body)   
 });
 
 it('Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.', async()=> {
   const response = await request(rota)
-    .get('/conteudos/6')             
-     expect(response.status).toBe(200)
-     console.log(response.body)
+    .get('/conteudos/idConteudo')             
+    expect(response.status).toBe(200)
+    console.log(response.body)
  
 });
 
