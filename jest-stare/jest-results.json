@@ -1,8 +1,8 @@
 {
   "numFailedTestSuites": 1,
-  "numFailedTests": 1,
+  "numFailedTests": 2,
   "numPassedTestSuites": 0,
-  "numPassedTests": 3,
+  "numPassedTests": 2,
   "numPendingTestSuites": 0,
   "numPendingTests": 0,
   "numRuntimeErrorTestSuites": 0,
@@ -26,21 +26,21 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1720793449724,
+  "startTime": 1720793785886,
   "success": false,
   "testResults": [
     {
       "leaks": false,
-      "numFailingTests": 1,
-      "numPassingTests": 3,
+      "numFailingTests": 2,
+      "numPassingTests": 2,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1720793450493,
-        "runtime": 683,
+        "end": 1720793786646,
+        "runtime": 676,
         "slow": false,
-        "start": 1720793449810
+        "start": 1720793785970
       },
       "skipped": false,
       "snapshot": {
@@ -58,7 +58,7 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 91,
+          "duration": 70,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201.",
@@ -73,7 +73,7 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 10,
+          "duration": 7,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os dados esperados e o statusCode 200.",
@@ -88,17 +88,17 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 10,
+          "duration": 5,
           "failureDetails": [
             {
               "matcherResult": {
-                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"id\"\u001b[39m\n\nExpected value: \u001b[32m45\u001b[39m\nReceived value: \u001b[31m47\u001b[39m",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"id\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nExpected value: \u001b[32m48\u001b[39m\nReceived value: \u001b[31m{}\u001b[39m",
                 "pass": false
               }
             }
           ],
           "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"id\"\u001b[39m\n\nExpected value: \u001b[32m45\u001b[39m\nReceived value: \u001b[31m47\u001b[39m\n    at Object.toHaveProperty (C:\\Projetos\\test-api\\test\\test-conteudos.test.js:53:27)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"id\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nExpected value: \u001b[32m48\u001b[39m\nReceived value: \u001b[31m{}\u001b[39m\n    at Object.toHaveProperty (C:\\Projetos\\test-api\\test\\test-conteudos.test.js:53:27)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
           ],
           "fullName": "Suite de testes da api conteudos.. Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.",
           "invocations": 1,
@@ -112,19 +112,28 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 6,
-          "failureDetails": [],
-          "failureMessages": [],
+          "duration": 11,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"id\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nExpected value: \u001b[32m48\u001b[39m\nReceived value: \u001b[31m{\"message\": \"O conteúdo foi removido com sucesso!\"}\u001b[39m",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"id\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nExpected value: \u001b[32m48\u001b[39m\nReceived value: \u001b[31m{\"message\": \"O conteúdo foi removido com sucesso!\"}\u001b[39m\n    at Object.toHaveProperty (C:\\Projetos\\test-api\\test\\test-conteudos.test.js:61:27)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+          ],
           "fullName": "Suite de testes da api conteudos.. Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
+          "numPassingAsserts": 0,
           "retryReasons": [],
-          "status": "passed",
+          "status": "failed",
           "title": "Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200."
         }
       ],
-      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes da api conteudos.. › Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected path: \u001b[32m\"id\"\u001b[39m\n\n    Expected value: \u001b[32m45\u001b[39m\n    Received value: \u001b[31m47\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 51 |\u001b[39m     \u001b[33m.\u001b[39msend(alterarCadastroConteudo)\u001b[33m;\u001b[39m  \u001b[22m\n\u001b[2m     \u001b[90m 52 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody)\u001b[33m.\u001b[39mtoBeDefined()\u001b[33m;\u001b[39m \u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 53 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'id'\u001b[39m\u001b[33m,\u001b[39m(idConteudo\u001b[33m-\u001b[39m\u001b[35m1\u001b[39m))\u001b[33m;\u001b[39m        \u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 54 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[22m\n\u001b[2m     \u001b[90m 55 |\u001b[39m     console\u001b[33m.\u001b[39mlog(response\u001b[33m.\u001b[39mbody)   \u001b[22m\n\u001b[2m     \u001b[90m 56 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toHaveProperty (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest/test-conteudos.test.js\u001b[39m\u001b[0m\u001b[2m:53:27)\u001b[22m\u001b[2m\u001b[22m\n"
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes da api conteudos.. › Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected path: \u001b[32m\"id\"\u001b[39m\n    Received path: \u001b[31m[]\u001b[39m\n\n    Expected value: \u001b[32m48\u001b[39m\n    Received value: \u001b[31m{}\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 51 |\u001b[39m     \u001b[33m.\u001b[39msend(alterarCadastroConteudo)\u001b[33m;\u001b[39m  \u001b[22m\n\u001b[2m     \u001b[90m 52 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody)\u001b[33m.\u001b[39mtoBeDefined()\u001b[33m;\u001b[39m \u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 53 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'id'\u001b[39m\u001b[33m,\u001b[39midConteudo)\u001b[33m;\u001b[39m        \u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 54 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[22m\n\u001b[2m     \u001b[90m 55 |\u001b[39m     console\u001b[33m.\u001b[39mlog(response\u001b[33m.\u001b[39mbody)   \u001b[22m\n\u001b[2m     \u001b[90m 56 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toHaveProperty (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest/test-conteudos.test.js\u001b[39m\u001b[0m\u001b[2m:53:27)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes da api conteudos.. › Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m, \u001b[22m\u001b[32mvalue\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected path: \u001b[32m\"id\"\u001b[39m\n    Received path: \u001b[31m[]\u001b[39m\n\n    Expected value: \u001b[32m48\u001b[39m\n    Received value: \u001b[31m{\"message\": \"O conteúdo foi removido com sucesso!\"}\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 59 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request(rota)\u001b[22m\n\u001b[2m     \u001b[90m 60 |\u001b[39m     \u001b[33m.\u001b[39m\u001b[36mdelete\u001b[39m(\u001b[32m`/conteudos/${idConteudo}`\u001b[39m)    \u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 61 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m'id'\u001b[39m\u001b[33m,\u001b[39midConteudo)\u001b[33m;\u001b[39m           \u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 62 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[22m\n\u001b[2m     \u001b[90m 63 |\u001b[39m     console\u001b[33m.\u001b[39mlog(response\u001b[33m.\u001b[39mbody)\u001b[22m\n\u001b[2m     \u001b[90m 64 |\u001b[39m  \u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toHaveProperty (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest/test-conteudos.test.js\u001b[39m\u001b[0m\u001b[2m:61:27)\u001b[22m\u001b[2m\u001b[22m\n"
     }
   ],
   "wasInterrupted": false

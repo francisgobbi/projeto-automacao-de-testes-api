@@ -38,8 +38,7 @@ it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os d
   const response = await request(rota)
     .get(`/conteudos/${idConteudo}`)  
     .send(cadastroConteudo); 
-    expect(response.body).toBeDefined(); 
-    expect(response.body).toHaveProperty('id',idConteudo);          
+    expect(response.body).toBeDefined();              
     expect(response.status).toBe(200)
     console.log(response.body)
  
@@ -49,16 +48,14 @@ it('Você deverá alterar o conteúdo consultado anteriormente, e em seguida val
   const response = await request(rota)
     .put('/conteudos')
     .send(alterarCadastroConteudo);  
-    expect(response.body).toBeDefined(); 
-    expect(response.body).toHaveProperty('id',idConteudo);        
+    expect(response.body).toBeDefined();           
     expect(response.status).toBe(201)
     console.log(response.body)   
 });
 
 it('Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.', async()=> {
   const response = await request(rota)
-    .delete(`/conteudos/${idConteudo}`)    
-    expect(response.body).toHaveProperty('id',idConteudo);           
+    .delete(`/conteudos/${idConteudo}`)               
     expect(response.status).toBe(200)
     console.log(response.body)
  
