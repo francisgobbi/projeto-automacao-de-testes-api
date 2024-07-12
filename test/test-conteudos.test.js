@@ -28,7 +28,7 @@ it('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente re
 
 it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os dados esperados e o statusCode 200.', async()=> {
   const response = await request(rota)
-    .get('/conteudos/idConteudo')  
+    .get(`/conteudos/${idConteudo}`)  
     .send(cadastro_conteudo); 
     expect(response.body).toBeDefined();           
     expect(response.status).toBe(200)
@@ -47,7 +47,7 @@ it('Você deverá alterar o conteúdo consultado anteriormente, e em seguida val
 
 it('Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.', async()=> {
   const response = await request(rota)
-    .get('/conteudos/idConteudo')             
+    .get(`/conteudos/${idConteudo}`)             
     expect(response.status).toBe(200)
     console.log(response.body)
  
