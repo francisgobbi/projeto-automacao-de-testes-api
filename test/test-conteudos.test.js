@@ -21,7 +21,7 @@ it('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente re
     expect(response.body).toHaveProperty('id');
     expect(response.status).toBe(201)
     idConteudo = response.body.id
-    console.log('Id do conetudo cadastrador é : ', idConteudo)
+    console.log('Id do conetudo cadastrado é : ', idConteudo)
     console.log(response.body)   
 });
 
@@ -30,7 +30,8 @@ it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os d
   const response = await request(rota)
     .get(`/conteudos/${idConteudo}`)  
     .send(cadastro_conteudo); 
-    expect(response.body).toBeDefined();           
+    expect(response.body).toBeDefined(); 
+    expect(response.body).toHaveProperty('id',idConteudo);          
     expect(response.status).toBe(200)
     console.log(response.body)
  
