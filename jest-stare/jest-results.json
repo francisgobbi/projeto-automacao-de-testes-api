@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1720794173383,
+  "startTime": 1720794296035,
   "success": false,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1720794174025,
-        "runtime": 559,
+        "end": 1720794296777,
+        "runtime": 663,
         "slow": false,
-        "start": 1720794173466
+        "start": 1720794296114
       },
       "skipped": false,
       "snapshot": {
@@ -58,7 +58,7 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 96,
+          "duration": 64,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201.",
@@ -73,7 +73,7 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 8,
+          "duration": 9,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os dados esperados e o statusCode 200.",
@@ -101,7 +101,7 @@
             }
           ],
           "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at Object.toBe (C:\\Projetos\\test-api\\test\\test-conteudos.test.js:52:29)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at Object.toBe (C:\\Projetos\\test-api\\test\\test-conteudos.test.js:53:29)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
           ],
           "fullName": "Suite de testes da api conteudos.. Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.",
           "invocations": 1,
@@ -115,7 +115,7 @@
           "ancestorTitles": [
             "Suite de testes da api conteudos.."
           ],
-          "duration": 38,
+          "duration": 11,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api conteudos.. Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200.",
@@ -127,7 +127,7 @@
           "title": "Remover o conteúdo e garantir que o mesmo foi removido, não existe mais para consulta e o statusCode 200."
         }
       ],
-      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes da api conteudos.. › Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m201\u001b[39m\n    Received: \u001b[31m404\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 50 |\u001b[39m     \u001b[33m.\u001b[39msend(alterarCadastroConteudo)\u001b[33m;\u001b[39m  \u001b[22m\n\u001b[2m     \u001b[90m 51 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody)\u001b[33m.\u001b[39mtoBeDefined()\u001b[33m;\u001b[39m           \u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 52 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 53 |\u001b[39m     console\u001b[33m.\u001b[39mlog(response\u001b[33m.\u001b[39mbody)   \u001b[22m\n\u001b[2m     \u001b[90m 54 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 55 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toBe (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest/test-conteudos.test.js\u001b[39m\u001b[0m\u001b[2m:52:29)\u001b[22m\u001b[2m\u001b[22m\n"
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes da api conteudos.. › Você deverá alterar o conteúdo consultado anteriormente, e em seguida validar se realmente os dados foram alterados e o statusCode 201.\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m201\u001b[39m\n    Received: \u001b[31m404\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 51 |\u001b[39m     \u001b[33m.\u001b[39msend(alterarCadastroConteudo)\u001b[33m;\u001b[39m  \u001b[22m\n\u001b[2m     \u001b[90m 52 |\u001b[39m     expect(response\u001b[33m.\u001b[39mbody)\u001b[33m.\u001b[39mtoBeDefined()\u001b[33m;\u001b[39m           \u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 53 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 54 |\u001b[39m     console\u001b[33m.\u001b[39mlog(response\u001b[33m.\u001b[39mbody)   \u001b[22m\n\u001b[2m     \u001b[90m 55 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 56 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toBe (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest/test-conteudos.test.js\u001b[39m\u001b[0m\u001b[2m:53:29)\u001b[22m\u001b[2m\u001b[22m\n"
     }
   ],
   "wasInterrupted": false
