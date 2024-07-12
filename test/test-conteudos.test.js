@@ -12,12 +12,13 @@ describe('Suite de testes da api conteudos..', ()=>{
     
   }
 
-  const alterarCadastroConteudo = {    
+  const alterarCadastroConteudo = {  
+    id: "",  
     titulo: "O Fim do PLaneta",
     descricao: "A história do fim do planeta terra",
     tipoConteudo: "Ficção !!!",
-    conteudo: "Aterado o conteudo do fim do mundo é um evento futuro hipotético que tem o potencial para prejudicar ou extinguir a humanidade e/ou qualquer outra forma de vida no planeta Terra."
-    
+    conteudo: "Aterado o conteudo do fim do mundo é um evento futuro hipotético que tem o potencial para prejudicar ou extinguir a humanidade e/ou qualquer outra forma de vida no planeta Terra.",
+    dataCadastro: ""
   }
 
 
