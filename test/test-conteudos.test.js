@@ -13,16 +13,15 @@ describe('Suite de testes da api conteudos..', ()=>{
   }
 
 
-it.only('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201.', async()=> {
+it('Cadastrar um novo conteúdo e verificar que o conteúdo está devidamente retornando os dados esperados e o statusCode 201.', async()=> {
   const response = await request(rota)
     .post('/conteudos')
-    .send(cadastro_conteudo); 
-    expect(response.body)           
+    .send(cadastro_conteudo);   
+    expect(response.body).toBeDefined();
+    expect(response.body).toHaveProperty('id');
     expect(response.status).toBe(201)
-    expect (response.body).toBeDefined();
-    expect (response.body).toHaveProperty('id');
     idConteudo = response.body.id
-    Console.log('Id do conetuedo cadastrador é : ', idConteudo)
+    console.log('Id do conetudo cadastrador é : ', idConteudo)
     console.log(response.body)   
 });
 
@@ -31,7 +30,7 @@ it('Realizar a consulta do conteúdo em que acabou de cadastrar, retornando os d
   const response = await request(rota)
     .get('/conteudos/idConteudo')  
     .send(cadastro_conteudo); 
-    expect(response.body)           
+    expect(response.body).toBeDefined();           
     expect(response.status).toBe(200)
     console.log(response.body)
  
@@ -41,7 +40,7 @@ it('Você deverá alterar o conteúdo consultado anteriormente, e em seguida val
   const response = await request(rota)
     .post('/conteudos')
     .send(cadastro_conteudo);  
-    expect(response.body)          
+    expect(response.body).toBeDefined();         
     expect(response.status).toBe(201)
     console.log(response.body)   
 });
